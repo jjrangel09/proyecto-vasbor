@@ -1,0 +1,99 @@
+﻿.centrar{
+    text-align:center;
+}
+
+.centrar-pagina{
+    width:300px;
+    height:300px;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+}
+.espacio_boton{
+    margin-top:20px;
+}
+.espacio_cajas {
+    margin-top: 10px;
+}
+.piepagina_posicion {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 1200px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.gridcentrar {
+    top: 1%;
+    left: 50%;
+}
+body{
+    padding-top:50px;
+}
+.productoCatalogo{
+    font-size:15px;
+    font-weight:600;
+    line-height:15px;
+    text-transform:uppercase;
+    font-family:sans-serif;
+}
+.productoNombre {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 15px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+.productoPrecio {
+    font-size: 14px;
+    line-height: 17px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.productoPrecioDescuento {
+    font-size: 13px;
+    font-family: sans-serif;
+    font-weight: 400;
+    text-decoration:line-through;
+    color:gray;
+}
+.productoPrecioDescuentoPorcentaje {
+    font-size: 13px;
+    font-family: sans-serif;
+    font-weight: 400;
+    color: deeppink;
+}
+.priceGray {
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 400;
+    color: dimgray;
+}
+
+.priceGreen {
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 400;
+    color: #20bd99;
+}
+
+.buyNowBtn {
+    border-radius: 3px;
+    outline: 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    min-height: 22px;
+    padding: 10px 15px;
+    font-weight: 500;
+    background-color: #14cda8;
+    border: 1px solid #14cda8;
+    color: #fff;
+    width: 100%;
+}
+

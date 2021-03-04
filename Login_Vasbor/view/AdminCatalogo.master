@@ -1,0 +1,84 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="~/Controller/Catalogo.master.cs" Inherits="view_Catalogo" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Catalogo</title>
+    
+    <!-- Bootstrap -->
+    <link href="css/Custom-Cs.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/centrar-Cs.css" rel="stylesheet" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+<body>
+       <form id="form1" runat="server">
+    <div>
+        <!-- inicio-->
+         <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="Catalogo.aspx"><span>
+                        <img alt="Logo" src="../imagenes/vasbor.png" height="30" /></span>Vasbor</a>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Perfil Usuario<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                             <li ><a href="CambiarContraseña.aspx">Cambiar Contraseña</a></li>
+                             <li ><a href="SusuarioRegistrado.aspx">Editar Perfil</a></li>
+                            </ul>
+                            </li>
+                             <li><a href="Catalogo.aspx">Menus</a></li>
+                            <li >
+                                <asp:Button ID="btn_cart" Text="Carrito" CssClass="btn btn-primary" OnClick="btn_cart_Click" runat="server" /><span class="badge"><asp:Label ID="lb_Concar"   runat="server" /></span> 
+                                <asp:Button ID="btn_cerrarusuario" CssClass="btn btn-default navbar-btn" Text="Cerrar Sesion" runat="server" OnClick="btn_cerrarusuario_Click" CausesValidation="false" />
+                                
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+         <!-- inicio-->
+        <div class="container">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </div>
+   <hr />
+        <footer >
+            <div class="container">
+                <p class="center">&copy; 2020 Vasbor S.A.S</p>
+                 
+            </div>
+        </footer>
+    </form>
+     
+   
+     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
+
